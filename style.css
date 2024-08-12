@@ -1,0 +1,73 @@
+.container{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-box{
+    background-color: white;
+    border-radius: 5px;
+    height:50% ;
+    width: 40%;
+    text-align: center;
+}
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .quote-box {
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .author {
+        float: none; /* Stack author below the quote */
+        display: block; /* Ensure it takes up the full width */
+        text-align: right; /* Align author text to the right */
+        padding: 0; /* Remove padding */
+    }
+    .btn{
+        width: 100%;
+        margin-left: 2rem;
+       margin-bottom: 1rem;
+    }
+}
+
+.quote{
+    font-weight: bold;
+}
+.author{
+float: right;
+padding-right: 1rem;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin-top: 3rem;
+    font-weight: bold;
+    padding: 7px 17px;
+    border:none ;
+    border-radius: 20px;
+}
+#btn-newquote:hover{
+    border: 1px solid black;;
+}
+#btn-tweet:hover{
+    border: 1px solid #1DA1F2 ;;
+}
+#btn-newquote{
+    background-color: #1DA1F2;
+    color: white;
+    margin-right: 1rem;
+}
+#btn-tweet{
+    border: 1px solid #657786;
+    background-color: white;
+    color: black;
+}
+
+.img{
+    height: 24px;
+}
